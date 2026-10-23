@@ -2533,6 +2533,19 @@ body:not(.hsm-login-ok)>*:not(#hsmLoginGate){display:none!important}
  document.addEventListener('DOMContentLoaded',function(){var salesmanSelect=$('hsmManagedSalesman');if(salesmanSelect)salesmanSelect.addEventListener('change',refreshSalesmanPhonePreview);refreshSalesmanPhonePreview();visibility();var f=window.fcApplyAccess;if(typeof f==='function'&&!f.__v121pw){window.fcApplyAccess=function(){var r=f.apply(this,arguments);visibility();return r};window.fcApplyAccess.__v121pw=true}});
  window.addEventListener('load',visibility);var u=$('userSel');if(u)u.addEventListener('change',visibility);
 })();
+</script><script>
+  if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js').catch(err => console.warn('SW error:', err));
+    });
+  }
 </script>
 
 </body>
+<script>
+  if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js').catch(err => console.warn('SW error:', err));
+    });
+  }
+</script>
